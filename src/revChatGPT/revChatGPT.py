@@ -183,7 +183,7 @@ class OpenAIAuth:
             "Host": "ask.openai.com",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
-            "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Accept-Encoding": "gzip, deflate, br",
             "Connection": "keep-alive",
         }
@@ -206,7 +206,7 @@ class OpenAIAuth:
             "Accept": "*/*",
             "Connection": "keep-alive",
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
-            "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Referer": "https://chat.openai.com/auth/login",
             "Accept-Encoding": "gzip, deflate, br",
         }
@@ -232,7 +232,7 @@ class OpenAIAuth:
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
             'Referer': 'https://chat.openai.com/auth/login',
             'Content-Length': '100',
-            'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Content-Type': 'application/x-www-form-urlencoded',
         }
         response = self.session.post(url=url, headers=headers, data=payload)
@@ -255,7 +255,7 @@ class OpenAIAuth:
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Connection': 'keep-alive',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Referer': 'https://chat.openai.com/',
         }
         response = self.session.get(url=url, headers=headers)
@@ -277,7 +277,7 @@ class OpenAIAuth:
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Connection': 'keep-alive',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Referer': 'https://chat.openai.com/',
         }
         response = self.session.get(url, headers=headers)
@@ -312,7 +312,7 @@ class OpenAIAuth:
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
             'Referer': f'https://auth0.openai.com/u/login/identifier?state={state}',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Content-Type': 'application/x-www-form-urlencoded',
         }
         response = self.session.post(url, headers=headers, data=payload)
@@ -339,7 +339,7 @@ class OpenAIAuth:
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
             'Referer': f'https://auth0.openai.com/u/login/password?state={state}',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Content-Type': 'application/x-www-form-urlencoded',
         }
         response = self.session.post(url, headers=headers, data=payload)
@@ -358,7 +358,7 @@ class OpenAIAuth:
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Connection': 'keep-alive',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15',
-            'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
             'Referer': f'https://auth0.openai.com/u/login/password?state={old_state}',
         }
         response = self.session.get(url, headers=headers, allow_redirects=True)
@@ -392,7 +392,7 @@ class OpenAIAuth:
             "If-None-Match": "\"bwc9mymkdm2\"",
             "Accept": "*/*",
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15",
-            "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Referer": "https://chat.openai.com/chat",
             "Accept-Encoding": "gzip, deflate, br",
         }
